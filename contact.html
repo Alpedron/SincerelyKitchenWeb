@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sincerely’s Kitchen — Contact</title>
+    <!-- Link to chosen font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!--meta desc for SEO-->
+    <meta name="description" content="Contact Sincerely’s Kitchen — reach us to order custom sugar-free desserts or inquire about healthy options." />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <img class="logo" src="cafe_images/logo_sincerely.jpg" alt="Sincerely’s Kitchen Logo" />
+          <div>
+            <h1 class="brand-name">Sincerely’s Kitchen</h1>
+            <p class="tagline">Embrace the joy of guilt-free desserts!</p>
+          </div>
+        </div>
+        <nav aria-label="Primary" class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <!--Divides section into 2 grids for info and contact form section-->
+      <section class="grid-two">
+        <article>
+          <h2>Online Orders Only</h2>
+          <p><strong>Address:</strong> 85 San Agustin Kapitolyo, Pasig, Philippines</p>
+          <p>We are taking orders (until 6:00pm for next-day delivery) except WEDNESDAY AND SUNDAY (RESTDAY)</p>
+          <p><strong>Online Contact Hours:</strong> Mon–Sun, 9am-7pm</p>
+          <img class="wide-img" src="cafe_images/cover/cover.jpg" alt="product photo" />
+        </article>
+
+        <!-- Reservation Form -->
+        <article id="reservation" class="panel">
+          <h2>Reservation Form</h2>
+          <form id="orderForm" action="#" method="post" class="reserve-form">
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Juan Pedro" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="juan@email.com" required />
+            </div>
+            <div class="form-row split">
+              <div>
+                <label for="date">Date of delivery</label>
+                <input id="date" name="date" type="date" required />
+              </div>
+              <div>
+                <label for="time">Time of delivery</label>
+                <input id="time" name="time" type="time" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="pack">Order Type</label>
+              <select id="pack" name="pack" required>
+                <option value="">Select…</option>
+                <option value="Pickup">Pickup</option>
+                <option value="Delivery">Delivery</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="orders">List your orders here:</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Protein dreamcake - 1 can"></textarea>
+            </div>
+            <div class="form-row">
+              <label for="notes">Special Requests (optional)</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Allergies, sugarfree, etc."></textarea>
+            </div>
+            <button class="btn" type="submit">Submit Reservation</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Sincerely’s Kitchen • 85 San Agustin Kapitolyo, Pasig, Ph •
+      </p>
+      <!--Clickable Socials links-->
+      <div class="socials">
+        <a href="https://www.facebook.com/sincerelyskitchen" target="_blank" rel="noopener">
+          <img src="cafe_images/logo_fb.png" alt="Facebook link" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/sincereleyskitchen/" target="_blank" rel="noopener">
+          <img src="cafe_images/logo_ig.png" alt="Instagram link" class="social-icon">
+        </a>
+        <a href="https://shopee.ph/sincerelyskitchen" target="_blank" rel="noopener">
+          <img src="cafe_images/logo_shopee.png" alt="Shopee link" class="social-icon">
+        </a>
+      </div>
+    </footer>
+    <!--Link to external JS-->
+    <script src="script.js" defer></script>
+  </body>
+</html>
